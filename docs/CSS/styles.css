@@ -1,0 +1,157 @@
+/* Index style */
+.brands img {
+    height: 200px;
+    width: 306px;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.brands {
+    text-align: center;
+    font-family: 'Rokkitt', serif;
+    font-size: x-large;
+}
+
+.brands img:hover {
+    background-color: rgb(100, 105, 95);
+    transform: scale(1);
+}
+
+#IndexPage {
+    background-image: url(../Images/Background.jpg);
+}
+
+/* cars style */
+
+ul {
+    clear: left;
+}
+
+ul {
+    padding-left: 10px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Rokkitt', serif;
+}
+
+.Brandcars {
+    background-color: rgb(124, 124, 122);
+    text-align: center;
+
+}
+
+.Catalogue:hover {
+    background-color: rgb(100, 105, 95);
+    transform: scale(0.94);
+}
+
+
+/* Buy car style */
+.container {
+    max-width: 970px;
+}
+
+/* About us style */
+.sales-image:hover {
+    transform: scale(0.8);
+    /* Enlarge the image on hover */
+    transition: transform 0.3s ease;
+    /* Smooth transition for the transform */
+}
+
+.sales-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container {
+    display: block;
+    justify-content: space-between;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    /* Adds some space below each container */
+    align-items: center;
+    /* Centers items horizontally */
+    text-align: center;
+    /* Centers the text */
+}
+
+.form-title {
+    text-align: center;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*
+navigation bar
+*/
+.navi {
+
+    text-align: center;
+    height: 80px;
+    background-color: rgb(78, 82, 74);
+    transition: transform 0.3s, background 0.3s;
+    padding: 30px 0;
+}
+
+.navi:hover {
+    background-color: rgb(100, 105, 95);
+    transform: scale(1.1);
+}
+
+/*
+modify navigation bar's links and delete underline
+*/
+.link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+.game-container {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col-md-2,
+.navi,
+.img {
+    padding-left: 0;
+    padding-right: 0;
+}
