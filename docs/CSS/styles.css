@@ -61,44 +61,69 @@ h5 {
 
 /* Buy car style */
 .container {
-    max-width: 970px;
+    max-width: 1200px;
+    padding: 0 1.5rem;
 }
 
 /* About us style */
 .sales-image:hover {
-    transform: scale(0.8);
-    /* Enlarge the image on hover */
+    transform: scale(0.95);
     transition: transform 0.3s ease;
-    /* Smooth transition for the transform */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .sales-image {
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
 .image-container {
-    display: block;
-    justify-content: space-between;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    /* Adds some space below each container */
-    align-items: center;
-    /* Centers items horizontally */
-    text-align: center;
-    /* Centers the text */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .form-title {
     text-align: center;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid black;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    margin-top: 0;
-    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 0;
+    background: var(--bs-body-bg, Canvas);
+    color: var(--bs-body-color, CanvasText);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.form-title:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-title h3,
+.form-title h4,
+.form-title p {
+    color: inherit;
+}
+
+.form-title h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.4rem;
+}
+
+.form-title h4 {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.form-title p {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
 }
 
 h1 {
@@ -154,4 +179,15 @@ canvas {
 .img {
     padding-left: 0;
     padding-right: 0;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .form-title {
+        padding: 1rem;
+    }
 }
