@@ -236,7 +236,7 @@
             <div class="image-container">
                 <div class="form-title">
                     <a href="https://buy.stripe.com/4gw9DO63ebdCdC85kq">
-                        <img src="./Images/duolingo.png" class="sales-image" alt="">
+                        <img src="./Images/duolingo.png" class="sales-image" alt="Duolingo family plan logo">
                     </a>
                     <h3>Super Duolingo Family Plan</h3>
                     <h4>(1 Year)</h4>
@@ -246,7 +246,7 @@
 
                 <div class="form-title">
                     <a href="https://buy.stripe.com/4gw7vGajua9y9lScMR">
-                        <img src="./Images/spotify.jpg" class="sales-image" alt="">
+                        <img src="./Images/spotify.jpg" class="sales-image" alt="Spotify Premium family plan illustration">
                     </a>
                     <h3>Spotify Premium Family Plan</h3>
                     <h4>(1 Season)</h4>
@@ -256,7 +256,7 @@
 
                 <div class="form-title">
                     <a href="https://buy.stripe.com/cN28zKgHSchG55C007">
-                        <img src="./Images/ChatGPT Plus.png" class="sales-image" alt="">
+                        <img src="./Images/ChatGPT Plus.png" class="sales-image" alt="ChatGPT Plus subscription badge">
                     </a>
                     <h3>ChatGPT Plus</h3>
                     <h4>(1 month)</h4>
@@ -265,30 +265,27 @@
 
                 <div class="form-title">
                     <a href="https://buy.stripe.com/6oE9DOdvGbdC7dK14c">
-                        <img src="./Images/ChatGPT API.png" class="sales-image" alt="">
+                        <img src="./Images/ChatGPT API.png" class="sales-image" alt="ChatGPT API credit card art">
                     </a>
                     <h3>ChatGPT API 10</h3>
                     <h4>(10 USD Credit)</h4>
                     <p>Please click the icon above to pay</p>
                 </div>
 
-                <div>
-                    <li><script async src="https://js.stripe.com/v3/buy-button.js">
-                    </script>
-
-                    <stripe-buy-button buy-button-id="buy_btn_1OXQTAKUL2eUcIVChpxCR83k"
-                        publishable-key="pk_live_51OXPDcKUL2eUcIVC7tNMcvGTVVedTirbsjF9LpbTrkaVK2hqenf4DD62avunRoqL7l8z2ZTXWL1QNNAEoPxRxnav00I0bV7tQH">
-                    </stripe-buy-button></li>
-
-                    <li><script async src="https://js.stripe.com/v3/buy-button.js">
-                    </script>
-
-                    <stripe-buy-button buy-button-id="buy_btn_1OrfotKUL2eUcIVC7RbptnLs"
-                        publishable-key="pk_live_51OXPDcKUL2eUcIVC7tNMcvGTVVedTirbsjF9LpbTrkaVK2hqenf4DD62avunRoqL7l8z2ZTXWL1QNNAEoPxRxnav00I0bV7tQH">
-                    </stripe-buy-button></li>
-
-                    <p>Here's flexible payment</p>
-                    <p>Please contact advisor to confirm the payment amount and click the "Pay" button.</p>
+                <div class="form-title">
+                    <h3>Flexible Payment</h3>
+                    <div class="d-flex flex-column gap-3 align-items-center">
+                        <stripe-buy-button buy-button-id="buy_btn_1OXQTAKUL2eUcIVChpxCR83k"
+                            publishable-key="pk_live_51OXPDcKUL2eUcIVC7tNMcvGTVVedTirbsjF9LpbTrkaVK2hqenf4DD62avunRoqL7l8z2ZTXWL1QNN
+AEoPxRxnav00I0bV7tQH">
+                        </stripe-buy-button>
+                        <stripe-buy-button buy-button-id="buy_btn_1OrfotKUL2eUcIVC7RbptnLs"
+                            publishable-key="pk_live_51OXPDcKUL2eUcIVC7tNMcvGTVVedTirbsjF9LpbTrkaVK2hqenf4DD62avunRoqL7l8z2ZTXWL1QNN
+AEoPxRxnav00I0bV7tQH">
+                        </stripe-buy-button>
+                    </div>
+                    <p class="mb-0">Please contact an advisor to confirm the payment amount before clicking the
+                        "Pay" button.</p>
                 </div>
 
                 <!-- <li class="list-inline-item">Bitcoin: </li>
@@ -307,6 +304,7 @@
         </footer>
     </div>
 
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
